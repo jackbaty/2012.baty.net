@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Tinderbox 4.5.  - Jack Baty - the archives</title>
+  <meta name="author" content="Jack Baty">
+
+  
+  <meta name="description" content="The release of &#8220;Tinderbox 4.5&#8221;:http://eastgate.com/Tinderbox brings prettier maps, faster agents and new visualation options along with &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://archives.jackbaty.com/2008/08/tinderbox-45">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/jack" rel="alternate" title="Jack Baty - the archives" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Jack Baty - the archives</a></h1>
+  
+    <h2>Years of jackbaty.com - archived</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/jack" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:archives.jackbaty.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/about/">About</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/stuff-i-use/">Stuff I Use</a></li>
+  <li><a href="/photography/">Photography</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+  
+  
+    <h1 class="entry-title">Tinderbox 4.5.</h1>
+  
+
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-08-30T16:11:51-04:00" pubdate data-updated="true">Aug 30<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><img src="/images//tinderbox-logo.gif" alt="" />
+The release of &#8220;Tinderbox 4.5&#8221;:http://eastgate.com/Tinderbox brings prettier maps, faster agents and new visualation options along with a boatload of incremental improvements. I&#8217;ve jotted down a few notes.</p>
+
+<p>h3. Maps</p>
+
+<p>A software program&#8217;s aesthetics are important. How important is a matter of opinion, and many Mac developers spend so much time on the &#8220;Oooh Pretty!&#8221; parts of their apps that the software ends up beautiful, but actually <em>less</em> usable. Tinderbox has never suffered from this problem. I&#8217;ve gone so far as to call parts of it &#8220;ugly&#8221; and complained about its visual details on a number of occasions. I can stop doing that now.</p>
+
+<p>Somewhere between too plain and too pretty suits me best, and with version 4.5 Tinderbox now falls right where I like it on the aesthetic scale.</p>
+
+<p>Almost everything looks better now, but maps seem to have benefited the most</p>
+
+<p><a href="/images/tinderbox-map-example.jpg"><img src="/images/tinderbox-map-example-300x190.jpg" alt="" /></a></p>
+
+<p>Serious designers probably scoff at drop shadows, but I love them. Lots of us normal people do. Good news then, because notes in map views now have drop shadows. That&#8217;s cool and all, but the best part is that the shadow&#8217;s attributes are configurable on a per-note basis. This means agents can modify the offset and color of the shadow, helping Tinderbox do what it does best - capture and visualize information. Here&#8217;s a simple example. I rate movies I&#8217;ve seen based on a scale from 1-5. In the following map, I&#8217;ve set the Review prototype to change the offset of the note&#8217;s shadow based on the rating. The higher the rating, the greater the offset.</p>
+
+<p><a href="/images/tinderbox-shadow-offset.jpg"><img src="/images/tinderbox-shadow-offset-300x158.jpg" alt="" /></a></p>
+
+<p>So in this case, here&#8217;s the Rule for the Review prototype&#8230;</p>
+
+<p><code>if(Rating&gt;=3) {Badge="ok";} else {if(Rating&lt;3 &amp; Rating&gt;0) {Badge="no";} else {Badge=;}}  ; ShadowDistance=$Rating*5;</code></p>
+
+<p>This is a simple example, but demonstrates the way Tinderbox thinks about visualization: drop shadows are pretty, but they shouldn&#8217;t just be for show.</p>
+
+<p>h3. Inline Editing</p>
+
+<p>Most decent outliners allow editing notes inline, and now Tinderbox does as well. This frightened me at first, but I&#8217;ve adjusted my muscle memory slightly and now it feels as natural as ever.</p>
+
+<p>h3. Search</p>
+
+<p>There&#8217;s not much point in creating or storing all sorts of text content in Tinderbox if you never plan to get it back out again. I search my Tinderbox documents all the time, and in 4.5 it gets better.</p>
+
+<p><a href="/images//find.jpg"><img src="/images/find-300x248.jpg" alt="" /></a></p>
+
+<p>The ability to add multiple criteria is huge, and prevents me from having to create a temporary Agent to do the work for me. The window is also no longer a floater, which is nice.</p>
+
+<p>h3. Visualizations</p>
+
+<p>There is a new map pattern called Plot(). This is such a simple yet powerful thing, and my favorite new Tinderbox feature. Basically, you can set the pattern of a note in map view so that it will draw a simple graph of any data contained in each of its immediate children. Cool, eh?</p>
+
+<p>The first thing I did after downloading 4.5 was to add &#8220;Plot($Number)&#8221; as the pattern for a container holding my weight tracking notes. Yep, I use Tinderbox to record my weight every few days. I was planning on creating an export template to dump that information into Excel, but now I don&#8217;t have to.</p>
+
+<p><a href="/images/tinderbox-weight-plot.jpg"><img src="/images/tinderbox-weight-plot-300x141.jpg" alt="" /></a></p>
+
+<p>Now I can easily spot where that extra donut went.</p>
+
+<p>Another cool new thing is TableExpression. Setting TableExpression will cause a container in map view to render a tabular display of its contents, like so&#8230;</p>
+
+<p><a href="/images/tableexpression.jpg"><img src="/images/tableexpression-300x165.jpg" alt="" /></a></p>
+
+<p>And just to show off, here&#8217;s a little movie showing how I avoid too much fidgeting with the mouse when reviewing my DayLog entries.</p>
+
+<p><a href="http://jbaty.smugmug.com/gallery/5325952_qGXQp/1/#362050670_4t7zs-A-LB"><img src="/images//tinderbox45vidthumb.jpg" alt="" /></a></p>
+
+<p>Neat, yes? All that took was setting a couple of attributes on the Review and Reset adornments.</p>
+
+<p>Review OnAdd action: <code>Height=5.5;TitleHeight=4;Width=11</code></p>
+
+<p>Reset OnAdd action: <code>Height=;TitleHeight=;Width=</code></p>
+
+<p>It&#8217;s easy to forget that nearly <em>every</em> attribute in Tinderbox can be set using Agents and Actions. Powerful stuff, when you need it - invisible when you don&#8217;t.</p>
+
+<p>h3. Conclusion</p>
+
+<p>Each new version of Tinderbox brings thoughtful, useful new features. Version 4.5 is no exception. I hate to sound like an evangelist, but dammit there&#8217;s no reason not to love it.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jack Baty</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-08-30T16:11:51-04:00" pubdate data-updated="true">Aug 30<span>th</span>, 2008</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/geek/'>Geek</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2008/08/connect360-and-the-xbox/" title="Previous Post: Connect360 and the XBox">&laquo; Connect360 and the XBox</a>
+      
+      
+        <a class="basic-alignment right" href="/2008/08/on-not-being-a-programmer/" title="Next Post: On Not Being a Programmer">On Not Being a Programmer &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2012/05/welcome-to-the-archives-of-jackbaty-dot-com/">Welcome to the Archives of jackbaty.com</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/04/deciding-between-the-old-and-the-new/">Deciding between the old and the new</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/04/calepin-is-closing/">Calepin is closing</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/03/calepin-is-calling/">Calepin is Calling</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/03/i-hosed-the-rss-feed-again/">I Hosed the RSS Feed Again</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("jackbaty", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/jackbaty" class="twitter-follow-button" data-show-count="false">Follow @jackbaty</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Jack Baty -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4fa88955613f5d4dfc00010d');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+
+</body>
+</html>

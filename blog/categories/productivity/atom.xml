@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Productivity | Jack Baty - the archives]]></title>
+  <link href="http://archives.jackbaty.com/blog/categories/productivity/atom.xml" rel="self"/>
+  <link href="http://archives.jackbaty.com/"/>
+  <updated>2012-05-07T23:15:35-04:00</updated>
+  <id>http://archives.jackbaty.com/</id>
+  <author>
+    <name><![CDATA[Jack Baty]]></name>
+    <email><![CDATA[jack@jackbaty.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Operation Everything Goes Into Evernote]]></title>
+    <link href="http://archives.jackbaty.com/2012/03/operation-everthing-goes-into-evernote/"/>
+    <updated>2012-03-11T19:55:00-04:00</updated>
+    <id>http://archives.jackbaty.com/2012/03/operation-everthing-goes-into-evernote</id>
+    <content type="html"><![CDATA[<p>{% img /images/evernote_logo.gif Evernote %}</p>
+
+<p>I love trying new software. My idea of a fine Sunday afternoon is installing updates and checking out every line in every release note. What this usually means is that I find reasons to try all sorts of applications, even if something I already use would work fine. I rationalize this behavior easily, but the fact is I just like messing around with my "system". Today, while cleaning out my <a href="http://evernote.com">Evernote</a> notebooks, I spotted <a href="http://www.thesecretweapon.org/">The Secret Weapon</a>, "a no bs approach to personal productivity". I read the blog and watched the videos and decided it was a bit too much for me. Besides, I'm a die-hard OmniFocus nerd. Aren't I?</p>
+
+<p>It got me thinking. What if I were to put <em>everything</em> in Evernote? That's just crazy talk! After all, I'm the one who always complains that Evernote makes things too difficult to get back out again. It occurred to me that part of my problem is that it's <em>too easy</em> to switch between apps and that the slight friction that Evernote introduces might actually be an advantage.</p>
+
+<p>And so, operation "Everything Goes Into Evernote" began today. I'm using a modified version of The Secret Weapon's approach to GTD and put OmniFocus aside for now. I've moved my scanned archives from the powerful DEVONthink Pro into a new Evernote notebook. Project notes have been migrated from VoodooPad. I've even imported my Simplenote notes. I spent a few hours on all of this today, sitting at the iMac on my home office's desk. I'm now sitting in a chair using the MacBook Air and Evernote has synced everything up nicely. Plus, it's all on my iPhone. This required no additional sync servers or setup on my part. Encouraging.</p>
+
+<p>And since I tend to go all-in on stuff like this, I installed both Evernote Food and Evernote Hello. <a href="http://ifttt.com">ifttt</a> is bringing in all of my tweets, blog posts, and other favorited/liked content around the web.</p>
+
+<p>This all may become overwhelming to have in one place. I'm a fan of variety, so there's a concern that I'll just get bored again quickly. For now, though, everything goes into Evernote.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Turned Off: CIRCA1977]]></title>
+    <link href="http://archives.jackbaty.com/2012/01/turned-off-circa1977/"/>
+    <updated>2012-01-27T18:39:44-05:00</updated>
+    <id>http://archives.jackbaty.com/2012/01/turned-off-circa1977</id>
+    <content type="html"><![CDATA[<blockquote><p>"That our definition of activity has to come to include endlessly creating and replying to micro-messages and refreshing feeds, that productivity now means evaluating and adopting the latest-and-greatest app that will let you scan more messages faster, push more bits around or check off more items, is troubling."</p></blockquote>
+
+<p>I know I'm addicted to the internet and have learned to function this way. Also troubling.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[When everything looks the same]]></title>
+    <link href="http://archives.jackbaty.com/2011/12/when-everything-looks-the-same/"/>
+    <updated>2011-12-18T15:59:21-05:00</updated>
+    <id>http://archives.jackbaty.com/2011/12/when-everything-looks-the-same</id>
+    <content type="html"><![CDATA[<p><a href="/images/2011/12/everything-looks-the-same.jpg"><img src="/images/2011/12/everything-looks-the-same.jpg" alt="" /></a></p>
+
+<p>I recently missed an important task I had given myself. It had been appropriately entered into OmniFocus, but I'd assigned it the wrong context or whatever and it just sort of disappeared into the pile. While trying to figure out what had gone wrong -- why my trusted system failed -- it occurred to me that the overall <em>sameness</em> of things on my screen was part of the problem.</p>
+
+<p>Many of the apps I use have the same 2 or 3-pane layout, with a list of collections of things on the left and some form of detail on the right. Everything has the same blue-gray panels, similar fonts, list of attributes, and so on. Apple's OS X 10.7 release makes things worse by promoting the use of same-color icons everywhere. It's no wonder I can't tell a song in iTunes from an email in Mail to a PDF in <a href="http://www.devontechnologies.com/products/devonthink/overview.html">DEVONthink</a> from a text file in Finder. And of course everything uses a similar blue application icon.</p>
+
+<p>Putting all of my to-dos into OmniFocus is an easy, efficient way to make sure everything is recorded somewhere, but I'm not sure it's the best way for me to spot and prioritize those things. The washed out sameness of items within our 3.5" or 11" (or 13" or 27") <a href="http://www.theonion.com/articles/report-90-of-waking-hours-spent-staring-at-glowing,2747/">glowing rectangles</a> makes it difficult for me to spot things that are important. Forget about any sort of serendipity. My perfectly organized and vitally important to-do list looks much like my completely unnecessary iTunes playlists. It takes too much work to decide what I should be looking at on the screen.</p>
+
+<p>Consistency is great, until it homogenizes everything to the point of important things becoming indistinguishable from what should be background noise.</p>
+
+<p>One way I break away from this is by using software that looks different. Something like <a href="http://eastgate.com/tinderbox">Tinderbox</a> looks nothing like the other software I use. Tinderbox uses all sorts of helpful visual tricks to help me not only organize information, but to recognize the important things later -- at a glance.</p>
+
+<p>The ease of organization in software isn't always helpful, especially when the result doesn't <em>look</em> any different. In fact, moving things around in software as an attempt to "organize" them can make things worse, turning the whole process into a sort of cup and ball trick.</p>
+
+<p>Visual distinction is one advantage of writing things on paper. I can visually scan a hand-written list of to-dos and spot things simply based on the shape and position of each item. That happens automatically by virtue of the way writing on paper works. Plus, physically moving paper around a desk or on a bulletin board helps with later recognition and processing. I read somewhere that "When the hand moves, the mind moves." Similarly, things that look the same end up being the same, and finding ways to differentiate the important is something I'm working on.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Your email client is not a filing cabinet]]></title>
+    <link href="http://archives.jackbaty.com/2011/08/your-email-client-is-not-a-filing-cabinet/"/>
+    <updated>2011-08-16T21:20:33-04:00</updated>
+    <id>http://archives.jackbaty.com/2011/08/your-email-client-is-not-a-filing-cabinet</id>
+    <content type="html"><![CDATA[<p><a href="http://52tiger.net">52 Tiger</a>:</p>
+
+<blockquote><p>"Today I visited someone with over 1,800 messages in her email inbox. They weren’t unread. The messages were being stored there. It took her 12 minutes to find the message she wanted to show me.
+Twelve minutes.</p>
+
+<p>[snip]</p>
+
+<p>Again, Entourage is not a filing cabinet. Leaving your messages in email is like leaving your groceries in the paper bags from Stop &amp; Shop.
+<img src="http://feeds.feedburner.com/~r/52Tiger/~4/JwkNuvLDZsE" alt="" />"</p></blockquote>
+
+<p>Man, I so agree with that. Except it's wrong. A filing cabinet is <em>exactly</em> what email is. I've seen it.</p>
+
+<p>I know folks who always live with 1800 messages in their inbox. I used to make fun of them. Then they'd repeatedly find things faster and more easily than I did.</p>
+
+<blockquote><p>Act accordingly (WRITE DOWN the action, move to cold storage, throw away)</p></blockquote>
+
+<p>I'm laughed at for suggesting things like that. The usual response is something like, "Why would I write it down or file it somewhere else when I already have it right where I can find it?" I'm sure there's a good answer to that, but I don't know what it is.</p>
+
+<p>Me, with my System(s) and GTD and Mind-Like-Water and superior tone, would dig through properly referenced and archived messages looking for whatever. Meanwhile, just as I'd begin to break out in a sweat, they'd open their email program, quickly and deftly plucking just the right message from that vast impenetrable pile of crap all "filed" away randomly in their inbox.</p>
+
+<p>Who am I to tell them how to file things?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Living Room]]></title>
+    <link href="http://archives.jackbaty.com/2011/03/the-living-room/"/>
+    <updated>2011-03-05T17:14:41-05:00</updated>
+    <id>http://archives.jackbaty.com/2011/03/the-living-room</id>
+    <content type="html"><![CDATA[<p>My mom is going to have a conniption when she sees what I've just done to my living room. She has very specific ideas about what a living room should be. There should be a television (large as will reasonably fit) with accompanying entertainment center in a prominent position. A sofa with either a love seat or side chair organized around a nice coffee table would be good. Put a big mirror on one wall and scatter enough knick knacks about so that nothing looks "empty."</p>
+
+<p>That's not what I've done.</p>
+
+<p>For starters, there's no longer a television. That's right, I'm now officially one of <em>those</em> people. In its place I put my turntable. The reduction in cabling is astonishing.</p>
+
+<p><img src="/images/turntable-living-room.jpg" alt="Turntable" /></p>
+
+<p>At the other end of the room I added a simple writing desk and chair. Again, almost no cables.</p>
+
+<p><img src="/images/writingdesk.jpg" alt="Desk" /></p>
+
+<p>I'd prefer a nicer chair and some sort of interesting lamp, but this'll work. Who knows, I may hate the whole idea in a week, but for now I have nice, minimal place to write or draw and listen to music. And now there's no chance I'll "accidentally" just sit and watch T.V. all night.</p>
+
+<p>And for reading, there's the recliner. I think I'm all set.</p>
+
+<p><img src="/images/P3051452-1.jpg" alt="" /></p>
+
+<p>Who knows, maybe my mom will grow to like it. Eventually.</p>
+]]></content>
+  </entry>
+  
+</feed>

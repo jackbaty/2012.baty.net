@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Pivotal Tracker's new JIRA integration features - Jack Baty - the archives</title>
+  <meta name="author" content="Jack Baty">
+
+  
+  <meta name="description" content="Speaking of This and That, I use both Atlassian&#8217;s JIRA and more recently Pivotal Tracker for issue/story management. Both are great, and I don &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://archives.jackbaty.com/2010/01/pivotal-trackers-new-jira-integration-features">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/jack" rel="alternate" title="Jack Baty - the archives" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Jack Baty - the archives</a></h1>
+  
+    <h2>Years of jackbaty.com - archived</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/jack" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:archives.jackbaty.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/about/">About</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/stuff-i-use/">Stuff I Use</a></li>
+  <li><a href="/photography/">Photography</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+  
+  
+    <h1 class="entry-title">Pivotal Tracker's New JIRA Integration Features</h1>
+  
+
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-01-24T15:30:12-05:00" pubdate data-updated="true">Jan 24<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Speaking of <a href="http://jackbaty.com/2010/01/this-and-that/">This and That</a>, I use both Atlassian&#8217;s <a href="http://www.atlassian.com/software/jira/">JIRA</a> and more recently <a href="http://www.pivotaltracker.com/">Pivotal Tracker</a> for issue/story management. Both are great, and I don&#8217;t want to give up either of them, but it&#8217;s always been sort of an either/or proposition. The good news is that this weekend Tracker released some new features, one of which is integration with JIRA. Issues created in JIRA can be viewed within Tracker and optionally added to an iteration or the &#8220;icebox.&#8221; You can read about it in more detail <a href="http://www.pivotaltracker.com/help/integrations#external_integrations">here</a>. I&#8217;ve been playing with it today and it looks to be a great start. They&#8217;re still working on 2-way integration so that Features created in Tracker will also automatically be posted to JIRA. For now, it&#8217;s just JIRA->Tracker.</p>
+
+<p>We use a single JIRA project per client. Same goes for Tracker, so this works out well. It&#8217;s early, but here&#8217;s what I&#8217;m doing so far&#8230;</p>
+
+<ol>
+<li>Create filter in JIRA for all &#8220;Open&#8221; issues on a project that have been labeled &#8220;pivotal&#8221;</li>
+<li>Add a new JIRA &#8220;Integration&#8221; to the Tracker project, entering the ID of the newly created JIRA filter.</li>
+<li>View the new &#8220;JIRA&#8221; column in Tracker and simply drag and drop the issues to track into the icebox column.</li>
+</ol>
+
+
+<p>Any issue dragged from the JIRA column into either the icebox or iteration columns is then displayed with an &#8220;e&#8221; overlayed on its icon, indicating that it&#8217;s linked to a JIRA issue. As the feature is moved through the Tracker workflow, all comments and transitions made in Tracker are instantly posted to JIRA.</p>
+
+<p>At first glance, I think this will be a great way to collaborate around a collection of features using the strengths of both JIRA and Pivotal Tracker. Can&#8217;t wait for them to figure out how to get 2-way integration implemented.</p>
+
+<p><em>Note that this new feature is only hours old. I&#8217;m looking forward to see what we can do with it</em></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jack Baty</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-01-24T15:30:12-05:00" pubdate data-updated="true">Jan 24<span>th</span>, 2010</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/geek/'>Geek</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2010/01/this-and-that/" title="Previous Post: This and That">&laquo; This and That</a>
+      
+      
+        <a class="basic-alignment right" href="/2010/08/my-own-little-gtd-merry-go-round/" title="Next Post: My own little GTD merry-go-round">My own little GTD merry-go-round &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2012/05/welcome-to-the-archives-of-jackbaty-dot-com/">Welcome to the Archives of jackbaty.com</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/04/deciding-between-the-old-and-the-new/">Deciding between the old and the new</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/04/calepin-is-closing/">Calepin is closing</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/03/calepin-is-calling/">Calepin is Calling</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/03/i-hosed-the-rss-feed-again/">I Hosed the RSS Feed Again</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("jackbaty", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/jackbaty" class="twitter-follow-button" data-show-count="false">Follow @jackbaty</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Jack Baty -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4fa88955613f5d4dfc00010d');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+
+</body>
+</html>

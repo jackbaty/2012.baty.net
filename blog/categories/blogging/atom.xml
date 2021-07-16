@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Blogging | Jack Baty - the archives]]></title>
+  <link href="http://archives.jackbaty.com/blog/categories/blogging/atom.xml" rel="self"/>
+  <link href="http://archives.jackbaty.com/"/>
+  <updated>2012-05-07T23:15:35-04:00</updated>
+  <id>http://archives.jackbaty.com/</id>
+  <author>
+    <name><![CDATA[Jack Baty]]></name>
+    <email><![CDATA[jack@jackbaty.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Calepin is closing]]></title>
+    <link href="http://archives.jackbaty.com/2012/04/calepin-is-closing/"/>
+    <updated>2012-04-21T09:22:00-04:00</updated>
+    <id>http://archives.jackbaty.com/2012/04/calepin-is-closing</id>
+    <content type="html"><![CDATA[<p>And of course as soon as I find something I really like, it closes.</p>
+
+<blockquote class="twitter-tweet"><p>Announcement: Calepin is closing in 90 days. Consider moving to @<a href="https://twitter.com/scriptogram">scriptogram</a> Thanks for the ride. Sorry I couldn't maintain it.</p>&mdash; Calepin (@calepinapp) <a href="https://twitter.com/calepinapp/status/192335906479415296" data-datetime="2012-04-17T19:37:08+00:00">April 17, 2012</a></blockquote>
+
+
+<script src="http://archives.jackbaty.com//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>That's unfortunate, because Calepin really is (was) a nice, easy, Markdown
+and Dropbox based blogging service. Guess I'll be investigating <a href="http://scriptogr.am/">Scriptogr.am</a> as a replacement.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tumblr again]]></title>
+    <link href="http://archives.jackbaty.com/2011/06/tumblr-again/"/>
+    <updated>2011-06-02T19:33:31-04:00</updated>
+    <id>http://archives.jackbaty.com/2011/06/tumblr-again</id>
+    <content type="html"><![CDATA[<p>You know what, screw it. I quit Tumblr a while back thinking that I should keep everything managed and posted under a single site. Then I spent 2 hours dicking with the Wordpress templates here to make it easier to share links. Well that's exactly what Tumblr is for, so I fired it back up.</p>
+
+<p><a href="http://jackbaty.tumblr.com/">http://jackbaty.tumblr.com/</a>. Follow me.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Look everyone, what a dumb-ass!]]></title>
+    <link href="http://archives.jackbaty.com/2009/11/look-everyone-what-a-dumb-ass/"/>
+    <updated>2009-11-27T10:16:50-05:00</updated>
+    <id>http://archives.jackbaty.com/2009/11/look-everyone-what-a-dumb-ass</id>
+    <content type="html"><![CDATA[<p>Blogs and Twitter have been passing around a couple links recently that I find discouraging -- both the links and the passing around of them.</p>
+
+<p>The first is <a href="http://clientsfromhell.tumblr.com/">Clients from Hell</a>. This is a collection of anecdotes about difficult clients and each takes great pleasure in ridiculing some (thankfully anonymous) person. Now I know, every industry enjoys sharing war stories, and it can be a nice relief valve for frustration. Perhaps that's what <em>Clients from Hell</em> is meant to be, but it strikes me as snarky, angry and unproductive. Where are the followup stories about how someone dealt with one of these client situations successfully by explaining things in a way that was better understood? Maybe if we weren't so busy rolling our eyes and snickering we could be educating people. Of course it might not work, but it beats just muttering "what a dumb-ass" and writing a nasty reply. Some people actually are dumb-asses, but most aren't. We should stop assuming the former.</p>
+
+<p>Speaking of nasty replies, another post, <a href="http://www.27bslash6.com/p2p.html">'It's Like Twitter. Except We Charge People to Use It.'</a>, has found itself linked to quite a lot. It's like a detailed look at one of the <em>Clients from Hell</em> entries. Everyone describing it just laughs and laughs. Gruber calls it <a href="http://daringfireball.net/linked/2009/11/26/logo-pie-chart">brilliant</a>. It may be, but to me it reads more like an endless, fruitless conversation between 2 assholes. Being more "clever" than the other guy doesn't make you any less an asshole.</p>
+
+<p>I guess it's possible I've simply misplaced my sense of humor, but I don't think so. I just wish we could ease up a little on the snark and do something productive instead.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Wordpress vs Static]]></title>
+    <link href="http://archives.jackbaty.com/2009/09/wordpress-vs-static/"/>
+    <updated>2009-09-08T22:26:22-04:00</updated>
+    <id>http://archives.jackbaty.com/2009/09/wordpress-vs-static</id>
+    <content type="html"><![CDATA[<p>Maciej Ceglowski wrote a much linked to piece on <a href="http://idlewords.com/2009/09/how_to_not_get_your_blog_hacked.htm">How to not get your blog hacked</a>, suggesting that the best way to avoid having your Wordpress (or whatever) site hacked is to run it statically...</p>
+
+<blockquote><p>You can use a program like wget or curl to generate a flat HTML version of your website from this local version, and then upload these files to your public server to share them with the world</p></blockquote>
+
+<p>He's right, running only static HTML files is pretty secure. What I think he's wrong about is that his "answer is much simpler." The statement that keeping Wordpress up to date "...is the same as saying, devote half your life to learning and understanding WordPress administration" is not really valid these days. One click while logged into the Wordpress control panel, and Poof! you're up to date.</p>
+
+<p>On the other hand, his "simpler" solution required a <a href="http://idlewords.com/2009/09/using_wordpress_to_generate_flat_files.htm">follow up post</a> containing at least 7 steps requiring much geekery and with the hope that...</p>
+
+<blockquote><p>some intrepid WP user may try following these steps and use them as a starting point for a proper HOWTO.</p></blockquote>
+
+<p>No normal person with a Wordpress blog is going to go anywhere near that. Granted, if my livelihood depended upon my weblog, I would make the effort, and maybe that's the intended audience for his post. Most of us should probably just upgrade to 2.8.4 the hard way once, then pop in regularly and click the upgrade link if it's there. Hmmm, maybe I could create a cron job using my SSH key and... oh nevermind.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Yes Doctor, its an iphone]]></title>
+    <link href="http://archives.jackbaty.com/2008/08/yes-doctor-its-an-iphpne/"/>
+    <updated>2008-08-17T18:20:02-04:00</updated>
+    <id>http://archives.jackbaty.com/2008/08/yes-doctor-its-an-iphpne</id>
+    <content type="html"><![CDATA[<p>I've been feeling a bit wonky for a week or so. Tonight It got uncomfortable  enough to consider asking a doctor or two to about it. The Internet said I had several symptoms of a heart attack so better safe than sorry, eh?</p>
+
+<p>So here I am. Wired up to monitors, oxygen tube up my nose for the past 4 hours. EKG looked fine. Bloodwork pending. Just had an ultrasound to check my gall bladder I think.</p>
+
+<p>This is one of those better-safe-than-sorry things but I still feel mighty silly.</p>
+
+<p>The cool thing is that I can write this on my iphone while I wait for them to let me go home</p>
+]]></content>
+  </entry>
+  
+</feed>

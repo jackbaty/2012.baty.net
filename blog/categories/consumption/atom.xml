@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Consumption | Jack Baty - the archives]]></title>
+  <link href="http://archives.jackbaty.com/blog/categories/consumption/atom.xml" rel="self"/>
+  <link href="http://archives.jackbaty.com/"/>
+  <updated>2012-05-07T23:15:35-04:00</updated>
+  <id>http://archives.jackbaty.com/</id>
+  <author>
+    <name><![CDATA[Jack Baty]]></name>
+    <email><![CDATA[jack@jackbaty.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Sad, Beautiful Fact That We're All Going To Miss Almost Everything]]></title>
+    <link href="http://archives.jackbaty.com/2012/03/the-sad/"/>
+    <updated>2012-03-11T09:04:00-04:00</updated>
+    <id>http://archives.jackbaty.com/2012/03/the-sad</id>
+    <content type="html"><![CDATA[<p>Linda Holmes for NPR:</p>
+
+<blockquote><p>If "well-read" means "not missing anything," then nobody has a chance. If "well-read" means "making a genuine effort to explore thoughtfully," then yes, we can all be well-read. But what we've seen is always going to be a very small cup dipped out of a very big ocean, and turning your back on the ocean to stare into the cup can't change that.</p></blockquote>
+
+<p>The urge to not miss <em>anything</em> is so strong that I miss <em>important</em> things.</p>
+]]></content>
+  </entry>
+  
+</feed>

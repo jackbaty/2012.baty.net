@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Fusionary | Jack Baty - the archives]]></title>
+  <link href="http://archives.jackbaty.com/blog/categories/fusionary/atom.xml" rel="self"/>
+  <link href="http://archives.jackbaty.com/"/>
+  <updated>2012-05-07T23:15:35-04:00</updated>
+  <id>http://archives.jackbaty.com/</id>
+  <author>
+    <name><![CDATA[Jack Baty]]></name>
+    <email><![CDATA[jack@jackbaty.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Club Thievey]]></title>
+    <link href="http://archives.jackbaty.com/2007/12/club-thievey/"/>
+    <updated>2007-12-30T21:20:39-05:00</updated>
+    <id>http://archives.jackbaty.com/2007/12/club-thievey</id>
+    <content type="html"><![CDATA[<p><img src="/images/thievey.jpg" alt="thievey.jpg" /></p>
+
+<p>Mike Lee wants to buy you a (toy) Lemur. Just donate $100 (or more of course) to the <a href="http://savethelemur.org/">Madagascar Fauna Group</a> and he'll do just that. I (technically, Fusionary) just donated, mostly because Mike <a href="http://www.atomicwang.org/motherfucker/Index/14D6A22E-2B4B-4BD9-B32D-ADC17D362F32.html">asked so damn nicely</a>. And this, from <a href="http://atomicwang.org/alison/">another post</a>, clinched it…</p>
+
+<blockquote><p>Seriously, if I have to read another story about how David Pogue ate a burrito, and it gave him gas, and when he farted it sounded kind of like “subnotebook” from a so-called news organization that didn’t notice that, right now, the Mac community and and its developers are making a huge fucking difference in Madagascar, I’m going to punch someone in the balls.</p></blockquote>
+
+<p>So check out <a href="http://atomicwang.org/thievey/Club_Thievey/Welcome.html">Club Thievey</a>. And donate if the mood strikes you.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Twhirl, Twitterrific and Adobe Air]]></title>
+    <link href="http://archives.jackbaty.com/2007/12/twhirl-twitterrific-and-adobe-air/"/>
+    <updated>2007-12-30T13:25:00-05:00</updated>
+    <id>http://archives.jackbaty.com/2007/12/twhirl-twitterrific-and-adobe-air</id>
+    <content type="html"><![CDATA[<p>I'm logged in to <a href="http://twitter.com">Twitter</a> all day, every day (<a href="http://twitter.com/jackbaty">twitter.com/jackbaty</a>). It's become an important part of my workflow, or whatever you call what I do these days.</p>
+
+<p>That being the case, a good desktop Twitter client is important to me. I've been using <a href="http://iconfactory.com/software/twitterrific">Twitterrific</a> since shortly after I learned how to spell it. Twitterrific is a very nice OS X app that looks good and works flawlessly for the most part, which is more than I can say for Twitter itself lately. My desire for playing with new software brought me to <a href="http://snook.ca/snitter/">Snitter</a>. Snitter was the first real Adobe Air app I ran for any length of time, but it crashed and behaved badly on my machine. Uninstalled it. (This could very well be fixed by now, but I haven't tried it recently.)</p>
+
+<p>Today some folks were twittering about another Adobe Air based client, <a href="http://www.twhirl.org/">Twhirl</a>. You know me, I had to try it at once! Grabbed the <a href="http://labs.adobe.com/downloads/air.html">latest Air Beta</a> and fired it up. Nice stuff: multiple Twitter account handling, themes, search, etc. I thought I was on to something. Then I tried using it and that's where things started to go wrong. First thing I noticed is that the window would jump out from underneath the cursor whenever I clicked anywhere on the app. Not good, but what finally killed the experience for me was the text rendering. I'm a pretty forgiving guy when it comes to fonts and such, but the text was rendered terribly.</p>
+
+<p><img src="/images/twhirl-screen-timeline.jpg" alt="twhirl-screen-timeline.jpg" /></p>
+
+<p>I experimented with a few different fonts but they all looked wonky. Does anyone know if this is an Air thing or is it something specific to my install? I can't even read that. Text handling doesn't feel right either. For example, selected text is black rather than my system's highlight color. Dealing with Twitter's 140-character-at-a-time limit makes these issues less of a real problem, but still. Oh and Air really needs Growl support.</p>
+
+<p>I mentioned earlier on Twitter that Air apps "don't feel right." The above is a brief explanation why.</p>
+
+<p>As I left the Adobe conference a few months ago, I said that "Air is a game changer," and I still believe that. Over the past months, we've been building a number of Flex apps at <a href="http://www.fusionary.com/">Fusionary</a> and so far the results have been outstanding. Flex apps may have some challenges to overcome, but improving the user experience in a browser is a lot easier than improving upon that of native <em>desktop</em> apps. I'm looking forward to leveraging web work on the desktop. Someday.</p>
+
+<p>As for Twhirl and Snitter, they're great early attempts using Adobe Air. I like that they'll keep the pressure on Iconfactory to improve Twitterrific. The problem is that I'm not going to use them day to day just <em>because</em> they're Air apps. They have to be <em>better</em> apps, and they're not - yet.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why I love Fusionary: Reason #435]]></title>
+    <link href="http://archives.jackbaty.com/2007/12/why-i-love-fusionary-reason-435/"/>
+    <updated>2007-12-10T22:05:03-05:00</updated>
+    <id>http://archives.jackbaty.com/2007/12/why-i-love-fusionary-reason-435</id>
+    <content type="html"><![CDATA[<p>Arriving at the office on any given morning, I might find that <a href="http://www.sistercat.com/">someone</a> has attached a lovely portrait of me to my monitor.</p>
+
+<p><img src="/images/portrait-jb.jpg" alt="" /></p>
+
+<p>I love that</p>
+]]></content>
+  </entry>
+  
+</feed>

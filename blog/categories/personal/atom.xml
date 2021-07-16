@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Personal | Jack Baty - the archives]]></title>
+  <link href="http://archives.jackbaty.com/blog/categories/personal/atom.xml" rel="self"/>
+  <link href="http://archives.jackbaty.com/"/>
+  <updated>2012-05-07T23:15:35-04:00</updated>
+  <id>http://archives.jackbaty.com/</id>
+  <author>
+    <name><![CDATA[Jack Baty]]></name>
+    <email><![CDATA[jack@jackbaty.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Dad and his brother]]></title>
+    <link href="http://archives.jackbaty.com/2011/07/dad-and-uncle/"/>
+    <updated>2011-07-31T09:27:19-04:00</updated>
+    <id>http://archives.jackbaty.com/2011/07/dad-and-uncle</id>
+    <content type="html"><![CDATA[<p>{% img /images/2011/07/Dad-and-Gord.jpg Ron and Gordon Baty, 2011 %}</p>
+
+<p>My dad's brother Gordon and family were in town this week for a reunion. I didn't have any recent photos of my dad and Gordon together, so I shot this one.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Living Room]]></title>
+    <link href="http://archives.jackbaty.com/2011/07/living-room/"/>
+    <updated>2011-07-17T09:28:07-04:00</updated>
+    <id>http://archives.jackbaty.com/2011/07/living-room</id>
+    <content type="html"><![CDATA[<p>{% img /images/2011/07/2011-Roll-029_31-edit.jpg My Living Room, 2011. Olympus OM-1n. HP5+ %}</p>
+
+<p>This is the latest incarnation of my living room. I spend a significant amount of time here, and it's almost perfect for me. The walls are completely white and so far mostly unadorned. I have my record player and records, a few books I'm working through, a writing desk (not in photo), and a comfortable chair.</p>
+
+<p>I may break down and get a sofa at some point, since entertaining is difficult with only a single chair. I'll hang some photos as soon as I shoot something worth hanging. And I should probably find shelves for the vinyl. Mostly though, it's comfortable and just right.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Mom]]></title>
+    <link href="http://archives.jackbaty.com/2011/05/mom/"/>
+    <updated>2011-05-08T10:58:09-04:00</updated>
+    <id>http://archives.jackbaty.com/2011/05/mom</id>
+    <content type="html"><![CDATA[<p><img src="/images/2011/05/Mom-Portrait.jpg" alt="Mom Portrait" /></p>
+
+<p>My mom is awesome.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Living Room]]></title>
+    <link href="http://archives.jackbaty.com/2011/03/the-living-room/"/>
+    <updated>2011-03-05T17:14:41-05:00</updated>
+    <id>http://archives.jackbaty.com/2011/03/the-living-room</id>
+    <content type="html"><![CDATA[<p>My mom is going to have a conniption when she sees what I've just done to my living room. She has very specific ideas about what a living room should be. There should be a television (large as will reasonably fit) with accompanying entertainment center in a prominent position. A sofa with either a love seat or side chair organized around a nice coffee table would be good. Put a big mirror on one wall and scatter enough knick knacks about so that nothing looks "empty."</p>
+
+<p>That's not what I've done.</p>
+
+<p>For starters, there's no longer a television. That's right, I'm now officially one of <em>those</em> people. In its place I put my turntable. The reduction in cabling is astonishing.</p>
+
+<p><img src="/images/turntable-living-room.jpg" alt="Turntable" /></p>
+
+<p>At the other end of the room I added a simple writing desk and chair. Again, almost no cables.</p>
+
+<p><img src="/images/writingdesk.jpg" alt="Desk" /></p>
+
+<p>I'd prefer a nicer chair and some sort of interesting lamp, but this'll work. Who knows, I may hate the whole idea in a week, but for now I have nice, minimal place to write or draw and listen to music. And now there's no chance I'll "accidentally" just sit and watch T.V. all night.</p>
+
+<p>And for reading, there's the recliner. I think I'm all set.</p>
+
+<p><img src="/images/P3051452-1.jpg" alt="" /></p>
+
+<p>Who knows, maybe my mom will grow to like it. Eventually.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Jess gets published]]></title>
+    <link href="http://archives.jackbaty.com/2009/12/jess-gets-published/"/>
+    <updated>2009-12-12T11:26:18-05:00</updated>
+    <id>http://archives.jackbaty.com/2009/12/jess-gets-published</id>
+    <content type="html"><![CDATA[<p><img src="/images/jess-published-sm.jpg" alt="jess-published-sm.jpg" /></p>
+
+<p>Jessica came home excited to show me that one of her photos was published in a nearby local newspaper. She'd shown me the photo earlier and explained how she'd fought her way right up front near door of the Armory to make sure she had a good chance at capturing her boyfriend's brother's face when he walked in the room after returning from Afghanistan.</p>
+
+<p>Atta girl.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: geek | Jack Baty - the archives]]></title>
+  <link href="http://archives.jackbaty.com/blog/categories/geek/atom.xml" rel="self"/>
+  <link href="http://archives.jackbaty.com/"/>
+  <updated>2012-05-07T23:15:35-04:00</updated>
+  <id>http://archives.jackbaty.com/</id>
+  <author>
+    <name><![CDATA[Jack Baty]]></name>
+    <email><![CDATA[jack@jackbaty.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress, Janus, and Zsh]]></title>
+    <link href="http://archives.jackbaty.com/2012/03/octopress-janus-and-zsh/"/>
+    <updated>2012-03-04T15:54:00-05:00</updated>
+    <id>http://archives.jackbaty.com/2012/03/octopress-janus-and-zsh</id>
+    <content type="html"><![CDATA[<p>It doesn't take much for me to completely reverse direction. Not long ago I loudly proclaimed that the command line and I were going our separate ways. "I'm too old to remember all of those damn commands!" I said. "Tweaking my Vim and bash settings are nothing but a waste of time!" I snorted.</p>
+
+<p>Do you know what I did yesterday? I switched my shell to zsh, installed Janus, and moved my blog back to Octopress. It was so much fun I didn't know when to quit, so I didn't.</p>
+
+<h2>Octopress</h2>
+
+<p><a href="http://octopress.org/">Octopress</a> is a very nice wrapper for Jekyll, but anything ruby related tends to cause me grief. It was no different this time. Of course I didn't have rvm configured so I started there. Xcode was somehow either too old or otherwise broken and so I would get errors when running bundler. Gave up and updated the ginormous Xcode install and then ran this...</p>
+
+<p><code>bash terminal
+sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
+</code></p>
+
+<p>...which allowed me to finish installing Octopress. There's something wrong with the combination of having system ruby at 1.8.3 or whatever and new Ruby apps wanting some other version. Rvm is supposed to fix this, but for someone like me who only dabbles in Ruby these days, it's a pain in the ass.</p>
+
+<p>Converting the posts from my Wordpress blog was made possibly by <a href="https://github.com/thomasf/exitwp">exitwp</a> which converted each post to Markdown and added appropriate YAML front matter to each file. I know, I've <a href="http://jackbaty.com/2011/10/new-blogging-hotness/">gone through this before</a> but this time it coincides with my newfound love for the terminal and text files. Besides, I love having everything I've written on this blog since 2000 safely stored in 1700+ portable markdown files sitting in a folder on my computer. I'm using the default Octopress theme with a few tweaks to the header and I like it.</p>
+
+<h2>ZSH</h2>
+
+<p>The last thing someone who's sworn off the terminal should to is change their shell. I did it anyway. After hearing so many good things about <a href="http://zsh.sourceforge.net/">Z shell</a> I have been tempted to try it, but up until yesterday had backed away slowly. While tinkering, I ran into <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>, which makes getting a fully configured zsh install easy. I just did this...</p>
+
+<p><code>bash terminal
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+</code></p>
+
+<p>The tab completion in zsh alone is worth the price of a ticket.</p>
+
+<h2>Janus</h2>
+
+<p>The urge to tinker with Vim's configuration can chew through most of a developer's
+life if left unchecked. It's fun and addictive, though. I love finding some
+obscure setting that suddenly makes one task or another easier. I've got
+a few years into my configuration, and just threw most of it out due to
+<a href="https://github.com/carlhuda/janus">Janus</a>. Janus is a distribution of
+plugins, key mappings etc. for Vim and MacVim. It pulls in the best of
+thousands of plugins and configures them in a consistent, simple way.
+Anything can be overridden, so it works as a nice clean head start.
+Installation is a matter of running one command...</p>
+
+<p><code>bash terminal
+curl -Lo- http://bit.ly/janus-bootstrap | bash
+</code></p>
+
+<p>I still symlink my dotfiles into a dropbox directory so changes on one
+machine are automatically included on the others. I could use Git for this,
+and probably should, but so far the Dropbox sync works pretty well. Plus,
+I don't have to remember to push anything.</p>
+
+<p>All of this has been a great deal of fun, and of course I keep learning
+things each time I go through the process. Onward!</p>
+]]></content>
+  </entry>
+  
+</feed>

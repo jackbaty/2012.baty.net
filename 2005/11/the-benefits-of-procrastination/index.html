@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>The benefits of procrastination - Jack Baty - the archives</title>
+  <meta name="author" content="Jack Baty">
+
+  
+  <meta name="description" content="One of my more famous sayings has always been some form of &#8220;If you wait long enough, someone will do it for you.&#8221; Case in point. &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://archives.jackbaty.com/2005/11/the-benefits-of-procrastination">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/jack" rel="alternate" title="Jack Baty - the archives" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Jack Baty - the archives</a></h1>
+  
+    <h2>Years of jackbaty.com - archived</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/jack" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:archives.jackbaty.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/about/">About</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/stuff-i-use/">Stuff I Use</a></li>
+  <li><a href="/photography/">Photography</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+  
+  
+    <h1 class="entry-title">The Benefits of Procrastination</h1>
+  
+
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-11-26T20:59:26-05:00" pubdate data-updated="true">Nov 26<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>One of my more famous sayings has always been some form of &#8220;If you wait long enough, someone will do it for you.&#8221;</p>
+
+<p>Case in point. Validation in Ruby on Rails is awesome. Just add :validates_presence_of &#8220;title&#8221; in your model and you get a nice error message &#8220;Title is required&#8221; without doing any real work. Sometimes, however, it&#8217;s desirable to override that message with something a little nicer, say &#8220;Please enter a title for your new article.&#8221; Simple? It should be. There&#8217;s an attribute to all of the validation messages, :message. Great, so the following should work nicely…</p>
+
+<pre><code>&lt;code&gt;validates_presence_of :title,
+:message =&gt; "Please enter a title for your new article."&lt;/code&gt;
+</code></pre>
+
+<p>Easy, but it doesn&#8217;t work. Instead, you get back &#8220;Title Please enter a title for your new article.&#8221; Rails <em>always</em> prepends the column name to the message. Not great. I had planned to try writing a simple plugin yesterday to fix this but stopped because (a) I wanted to write other stuff and (b) I&#8217;m lazy and was still pissed that it didn&#8217;t already work as expected.</p>
+
+<p>Sure enough, Hammed Malik posts the following to the Rails mailing list…</p>
+
+<blockquote><p>&#8220;Validation messages prefixed with the field name have always bothered</p></blockquote>
+
+<p>me and it seems like I&#8217;m not alone. This seemed like a fairly easy fix</p>
+
+<p>to attempt for my first plugin so here it is:&#8221;</p>
+
+<blockquote></blockquote>
+
+<p>Now I can type &#8220;./script/plugin install <a href="http://estound.com/svn/rails/plugins/custom_validation_messages/">http://estound.com/svn/rails/plugins/custom_validation_messages/&#8221;</a> and move on to greater things.</p>
+
+<p>See, just hang out and whistle - someone will do it for you. Thanks Hammond! Anyone wanna write me a decent CMS? I&#8217;ll be waiting.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jack Baty</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-11-26T20:59:26-05:00" pubdate data-updated="true">Nov 26<span>th</span>, 2005</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2005/11/bowling-shoes/" title="Previous Post: Bowling Shoes">&laquo; Bowling Shoes</a>
+      
+      
+        <a class="basic-alignment right" href="/2005/11/gtd-on-43folders-e28093-again/" title="Next Post: GTD on 43Folders – again">GTD on 43Folders – again &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2012/05/welcome-to-the-archives-of-jackbaty-dot-com/">Welcome to the Archives of jackbaty.com</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/04/deciding-between-the-old-and-the-new/">Deciding between the old and the new</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/04/calepin-is-closing/">Calepin is closing</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/03/calepin-is-calling/">Calepin is Calling</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/03/i-hosed-the-rss-feed-again/">I Hosed the RSS Feed Again</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("jackbaty", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/jackbaty" class="twitter-follow-button" data-show-count="false">Follow @jackbaty</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Jack Baty -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4fa88955613f5d4dfc00010d');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+
+</body>
+</html>

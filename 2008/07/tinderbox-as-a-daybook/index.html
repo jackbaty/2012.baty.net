@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Tinderbox as a Daybook - Jack Baty - the archives</title>
+  <meta name="author" content="Jack Baty">
+
+  
+  <meta name="description" content="Inspired by the post at but she&#8217;s a girl&#8230;, I thought I&#8217;d jot down a few of my own notes on how I too use Tinderbox as a Daybook. &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://archives.jackbaty.com/2008/07/tinderbox-as-a-daybook">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/jack" rel="alternate" title="Jack Baty - the archives" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Jack Baty - the archives</a></h1>
+  
+    <h2>Years of jackbaty.com - archived</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/jack" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:archives.jackbaty.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/about/">About</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/stuff-i-use/">Stuff I Use</a></li>
+  <li><a href="/photography/">Photography</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+  
+  
+    <h1 class="entry-title">Tinderbox as a Daybook</h1>
+  
+
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-07-04T14:58:00-04:00" pubdate data-updated="true">Jul 4<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Inspired by the post at <a href="http://www.rousette.org.uk/blog/archives/tinderbox-daybook/">but she&#8217;s a girl&#8230;</a>, I thought I&#8217;d jot down a few of my own notes on how I too use <a href="http://www.eastgate.com/Tinderbox">Tinderbox</a> as a Daybook.</p>
+
+<p>One of the more useful things I&#8217;ve been doing with Tinderbox is to keep a running log of things I do each day. This &#8220;Daybook&#8221; has become a way to track billable time for clients, record technical notes, and keep a basic journal.</p>
+
+<p>Here&#8217;s what the overall outline looks like</p>
+
+<p><a href="http://www.flickr.com/photos/jbaty/2637105574/"><img src="http://farm4.static.flickr.com/3065/2637105574_891998beb1.jpg" alt="Tinderbox Daybook" /></a></p>
+
+<p>Any decent outliner could do this, but Tinderbox lets me tweak things as much or as little as I want. Prototypes and Actions make all the difference. I have a few tweaks that help keep things in order for me. Most of these come in the form of the tremendously useful Tinderbox feature, Prototypes.</p>
+
+<p><strong>Monthly Worklogs</strong> - I create one of these manually each month with a name like &#8220;July 2008&#8221; to hold that month&#8217;s entries. It has the following OnAdd action set…</p>
+
+<p>`</p>
+
+<pre><code>$Name=format($Created,"y-M0-D W"); Prototype="*DaylogContainer"
+</code></pre>
+
+<p>`</p>
+
+<p>This causes any notes within a worklog container to have its name set as the current date. It also sets the new note&#8217;s prototype to *DaylogContainer</p>
+
+<p><strong>DaylogContainer</strong> - This prototype has an OnAdd action to force contained notes to use the *DaylogEntry prototype…</p>
+
+<p>`</p>
+
+<pre><code>Prototype="*DaylogEntry"
+</code></pre>
+
+<p>`</p>
+
+<p><strong>DaylogEntry</strong> -  This is the prototype used for each individual entry. It has a DisplayExpression set so that each entry inserts the note&#8217;s date and time in the displayed name. Showing both the name and date helps when scanning the limited Tinderbox search results window. Here&#8217;s the DisplayExpression…</p>
+
+<p>`</p>
+
+<pre><code>format($Created,"m/d/y h:mm") + " : " + $Name + " " + $JiraKey
+</code></pre>
+
+<p>`</p>
+
+<p>The *DaylogEntry prototype uses custom attributes set as Key Attributes for easy entry (Duration, JiraKey, and Tags). We use <a href="http://www.atlassian.com/software/jira/">JIRA</a> as an issue tracker and if I&#8217;m working on a specific issue I record the key with each note. Displaying it as part of the name in the outline helps when recording timesheets. Here&#8217;s what a DaylogEntry note looks like.</p>
+
+<p><a href="http://www.flickr.com/photos/jbaty/2636284017/"><img src="http://farm4.static.flickr.com/3169/2636284017_484e4d4072_o.jpg" alt="Daylog entry" /></a></p>
+
+<p>The process of adding daylog entries starts by creating a container for that day. This is done by hitting Return twice to create the container (which is automatically named with the current date) and then Command-Option-O to open the container in its own outline. After that for each entry it&#8217;s a simple matter of hitting Return to start a new entry, then closing the window. Everything ends up named nicely and sorted by time of day.</p>
+
+<p>Here&#8217;s a quick video demonstrating how it looks…</p>
+
+<p>I&#8217;ve been doing this since the beginning of this year and have a total of 1235 entries so far with no apparent impact on Tinderbox&#8217;s performance. My Tinderbox Daybook has become a surprisingly valuable resource. It&#8217;s amazing how much information is available over time simply by recording minor events each day. I haven&#8217;t started mining this information in any formal way yet. Who knows what I&#8217;ll find!</p>
+
+<p><strong>UPDATE 2008-07-17:</strong> Fixed formatting issue with code samples. (thanks to David Phillips)</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jack Baty</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-07-04T14:58:00-04:00" pubdate data-updated="true">Jul 4<span>th</span>, 2008</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/geek/'>Geek</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2008/06/wanted/" title="Previous Post: Wanted">&laquo; Wanted</a>
+      
+      
+        <a class="basic-alignment right" href="/2008/07/comments-are-out-friendfeed-is-in/" title="Next Post: Comments are out, Friendfeed is in">Comments are out, Friendfeed is in &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2012/05/welcome-to-the-archives-of-jackbaty-dot-com/">Welcome to the Archives of jackbaty.com</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/04/deciding-between-the-old-and-the-new/">Deciding between the old and the new</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/04/calepin-is-closing/">Calepin is closing</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/03/calepin-is-calling/">Calepin is Calling</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/03/i-hosed-the-rss-feed-again/">I Hosed the RSS Feed Again</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("jackbaty", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/jackbaty" class="twitter-follow-button" data-show-count="false">Follow @jackbaty</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Jack Baty -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4fa88955613f5d4dfc00010d');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+
+</body>
+</html>

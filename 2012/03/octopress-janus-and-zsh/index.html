@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Octopress, Janus, and Zsh - Jack Baty - the archives</title>
+  <meta name="author" content="Jack Baty">
+
+  
+  <meta name="description" content="It doesn&#8217;t take much for me to completely reverse direction. Not long ago I loudly proclaimed that the command line and I were going our &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://archives.jackbaty.com/2012/03/octopress-janus-and-zsh">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/jack" rel="alternate" title="Jack Baty - the archives" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Jack Baty - the archives</a></h1>
+  
+    <h2>Years of jackbaty.com - archived</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/jack" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:archives.jackbaty.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/about/">About</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/stuff-i-use/">Stuff I Use</a></li>
+  <li><a href="/photography/">Photography</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+  
+  
+    <h1 class="entry-title">Octopress, Janus, and Zsh</h1>
+  
+
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-04T15:54:00-05:00" pubdate data-updated="true">Mar 4<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>It doesn&#8217;t take much for me to completely reverse direction. Not long ago I loudly proclaimed that the command line and I were going our separate ways. &#8220;I&#8217;m too old to remember all of those damn commands!&#8221; I said. &#8220;Tweaking my Vim and bash settings are nothing but a waste of time!&#8221; I snorted.</p>
+
+<p>Do you know what I did yesterday? I switched my shell to zsh, installed Janus, and moved my blog back to Octopress. It was so much fun I didn&#8217;t know when to quit, so I didn&#8217;t.</p>
+
+<h2>Octopress</h2>
+
+<p><a href="http://octopress.org/">Octopress</a> is a very nice wrapper for Jekyll, but anything ruby related tends to cause me grief. It was no different this time. Of course I didn&#8217;t have rvm configured so I started there. Xcode was somehow either too old or otherwise broken and so I would get errors when running bundler. Gave up and updated the ginormous Xcode install and then ran this&#8230;</p>
+
+<figure class='code'><figcaption><span>terminal</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>&#8230;which allowed me to finish installing Octopress. There&#8217;s something wrong with the combination of having system ruby at 1.8.3 or whatever and new Ruby apps wanting some other version. Rvm is supposed to fix this, but for someone like me who only dabbles in Ruby these days, it&#8217;s a pain in the ass.</p>
+
+<p>Converting the posts from my Wordpress blog was made possibly by <a href="https://github.com/thomasf/exitwp">exitwp</a> which converted each post to Markdown and added appropriate YAML front matter to each file. I know, I&#8217;ve <a href="http://jackbaty.com/2011/10/new-blogging-hotness/">gone through this before</a> but this time it coincides with my newfound love for the terminal and text files. Besides, I love having everything I&#8217;ve written on this blog since 2000 safely stored in 1700+ portable markdown files sitting in a folder on my computer. I&#8217;m using the default Octopress theme with a few tweaks to the header and I like it.</p>
+
+<h2>ZSH</h2>
+
+<p>The last thing someone who&#8217;s sworn off the terminal should to is change their shell. I did it anyway. After hearing so many good things about <a href="http://zsh.sourceforge.net/">Z shell</a> I have been tempted to try it, but up until yesterday had backed away slowly. While tinkering, I ran into <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>, which makes getting a fully configured zsh install easy. I just did this&#8230;</p>
+
+<figure class='code'><figcaption><span>terminal</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The tab completion in zsh alone is worth the price of a ticket.</p>
+
+<h2>Janus</h2>
+
+<p>The urge to tinker with Vim&#8217;s configuration can chew through most of a developer&#8217;s
+life if left unchecked. It&#8217;s fun and addictive, though. I love finding some
+obscure setting that suddenly makes one task or another easier. I&#8217;ve got
+a few years into my configuration, and just threw most of it out due to
+<a href="https://github.com/carlhuda/janus">Janus</a>. Janus is a distribution of
+plugins, key mappings etc. for Vim and MacVim. It pulls in the best of
+thousands of plugins and configures them in a consistent, simple way.
+Anything can be overridden, so it works as a nice clean head start.
+Installation is a matter of running one command&#8230;</p>
+
+<figure class='code'><figcaption><span>terminal</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>curl -Lo- http://bit.ly/janus-bootstrap | bash
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I still symlink my dotfiles into a dropbox directory so changes on one
+machine are automatically included on the others. I could use Git for this,
+and probably should, but so far the Dropbox sync works pretty well. Plus,
+I don&#8217;t have to remember to push anything.</p>
+
+<p>All of this has been a great deal of fun, and of course I keep learning
+things each time I go through the process. Onward!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jack Baty</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-04T15:54:00-05:00" pubdate data-updated="true">Mar 4<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/geek/'>geek</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2012/02/offlineimap-is-current-archiving-all-of-my-email/" title="Previous Post: OfflineIMAP is archiving all of my email">&laquo; OfflineIMAP is archiving all of my email</a>
+      
+      
+        <a class="basic-alignment right" href="/2012/03/the-sad/" title="Next Post: The Sad, Beautiful Fact That We're All Going To Miss Almost Everything">The Sad, Beautiful Fact That We're All Going To Miss Almost Everything &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2012/05/welcome-to-the-archives-of-jackbaty-dot-com/">Welcome to the Archives of jackbaty.com</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/04/deciding-between-the-old-and-the-new/">Deciding between the old and the new</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/04/calepin-is-closing/">Calepin is closing</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/03/calepin-is-calling/">Calepin is Calling</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/03/i-hosed-the-rss-feed-again/">I Hosed the RSS Feed Again</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("jackbaty", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/jackbaty" class="twitter-follow-button" data-show-count="false">Follow @jackbaty</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Jack Baty -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4fa88955613f5d4dfc00010d');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+
+</body>
+</html>
